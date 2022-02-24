@@ -1,4 +1,5 @@
 /*
+
 Google Font 
 Extra-light 200
 Extra-light 200 italic
@@ -10,3 +11,113 @@ Regular 400
 font-family: 'Gideon Roman', cursive;
 font-family: 'Karla', sans-serif;
 font-family: 'Lato', sans-serif;*/
+
+/*here i adjust everything to same format*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Lato', sans-serif;
+}
+
+
+/*HERE STARTS*/
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+
+a{
+    color:yellow;
+    text-decoration: none;
+}
+
+.nav-link{
+    list-style: none;
+    margin: 20px 0;
+    border-bottom: 2px solid white;
+    width: 8 rem;
+   
+}
+    
+
+
+/*Navbar*/
+.navbar{
+    background-color: indigo;
+    position: fixed; /*stay navbar at the top*/
+    width: 100%;
+    padding: 1rem;
+}
+
+.flex-nav{/*when i use display flex here, it will affect nav-header and nav-links*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-header span{
+    color: #FFCC00;
+}
+
+.nav-header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggle{
+    border:transparent;
+    background:transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-links{
+    height: 0;
+    overflow: hidden; /*this will make the nav-links dissapear*/
+}
+
+.nav-open{
+    height: 100vh;
+}
+
+@media only screen and (min-width:900px) {/*Once more than 900px menu icon dissapear*/
+    .nav-toggle{
+        display: none;
+    }
+    .nav-header{
+        display: block;
+    }
+    .flex-nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+    }
+    .nav-links{
+        height: auto;
+    }
+    ul{
+        text-align: center;
+    }
+    .nav-link{
+        display: inline-block;
+        border-bottom: none;
+        margin-left: 5rem;
+    }
+    .nav-links span{
+       /* background-color: lightgray;*/
+        padding: 8px 15px;
+        border-radius: 4px;
+    }
+
+
+}
