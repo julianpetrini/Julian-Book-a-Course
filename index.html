@@ -15,38 +15,125 @@
     <script src="https://kit.fontawesome.com/f30a166a26.js" crossorigin="anonymous"></script>
 </head>
 <body>
+   
+    <img src="assets/1.png" alt="logo-lengua-linguini" class="responsive">
+
     
-<div class="navbar">
-    <div class="container flex-nav">
-        <div class="nav-header">
-            <h2>Lengua <span>Linguini</span></h2>
-            <button class="nav-toggle" id=navToggle>
-                <i class="fas fa-bars"></i>
-            </button>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#portfolio" class="active">Home</a>
+        <a href="#skills">News</a>
+        <a href="#contact">Contact</a>
+        
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+
+
+    <section id="welcome" class="grid">
+        <div class="welcome-text">
+            <h2>Learn to <br> express in other words</h2>
+            <p class="leading">
+            <a href="#portfolio" class="button">learn more</a>
+            </p>
         </div>
-        <div class="nav-links" id="nav-links">
-            <ul>
-                <li class="nav-link"><a href="#">Home</a></li>
-                <li class="nav-link"><a href="#">products</a></li>
-                <li class="nav-link"><a href="#">about</a></li>
-                <li class="nav-link"><a href="#"><span>contact</span></a></li>
+        <div class="welcome-image">
+            <img src="#" alt="">
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h3>About our courses</h3>
+        <div class="projects grid">
+            <a href="#">
+                <img src="assets/uno1.png" alt="first picture of a course">
+                <h4>Spanish</h4>
+                <p>Un curso online te permite estudiar cuándo y dónde quieras. Con estos cursos simplemente tienes que adaptarte a tu propio proceso de aprendizaje, y puedes hacerlo tan rápido como quieras. A veces es difícil encontrar cursos de español disponibles durante ciertas épocas, bien porque los cursos ya han empezado o porque ya están llenos. Ya no tienes que preocuparte de esto más; los cursos online te ofrecen una gran flexibilidad de modo que no tienes que adaptarte a ellos, sino que ellos se adaptan a ti.</p>
+            </a>
+
+            <a href="#">
+                <img src="assets/uno2.png" alt="second picture of a course">
+                <h4>English</h4>
+                <p>Learn English online and improve your skills through our high-quality courses and resources – all designed for adult language learners. Everything you find here has been specially created by the British Council, the world's English teaching experts.</p>
+            </a>
+
+            <a href="#">
+                <img src="assets/uno3.png" alt="third picture of a course">
+                <h4>Deutsch</h4>
+                <p>Is focussed on group courses for levels A1 to C1. We offer intensive courses 5 mornings per week and semi-intensive courses 2 evenings or afternoons per week. In addition, we offer our students free video-conversation classes for levels A2, B1/B1+ and B2/C1.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>ABOUT</h3>
+        <ul class="grid">
+            <li>
+                <img src="assets/online5.png" alt="">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim pariatur ut laboriosam natus et accusamus, facere saepe temporibus at doloremque quod nihil a sequi consequuntur repellat commodi, distinctio ea cupiditate?</h4>
+            </li>
+            <li>
+                <img src="assets/online1.png" alt="">
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus alias reprehenderit recusandae culpa, consectetur impedit pariatur dolore accusamus animi quasi quo laborum. Maiores officia praesentium tempora rerum nesciunt omnis quod!</h4>
+            </li>
+            <li>
+                <img src="assets/online3.png" alt="">
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur praesentium nisi voluptas quod ducimus, veritatis optio ex obcaecati vitae tenetur sequi voluptates suscipit. Reprehenderit eligendi consequatur nulla, odit eveniet repudiandae?</h4>
+            </li>
+            <li>
+                <img src="assets/online4.png" alt="">
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur praesentium nisi voluptas quod ducimus, veritatis optio ex obcaecati vitae tenetur sequi voluptates suscipit. Reprehenderit eligendi consequatur nulla, odit eveniet repudiandae?</h4>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <h3>get in touch, and apply with our course</h3>
+        <p>you will remember this day as the one who changed your destiny</p>
+        <form action="">
+            <input type="text" placeholder="NAME" name="" id="">
+            <input type="text" placeholder="LAST-NAME" name="" id="">
+            <input type="email" placeholder="email adress bitte" name="" id=""><br>
+
+            <div class="form-flex">
+
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">English</label><br>
+
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">Deutch</label><br>
+
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">Spanish</label><br>
+
+            </div>
+
+            <textarea name="message" style="width:300px; height:200px;" placeholder="Please told us if you need further information"></textarea><br>
+
+            <button class="button">Confirm</button>
+
+
+        </form>
+    </section>
+
+    <footer>
+        <div class="grid">
+            <p>copyright 2022 Julian Petrini</p>
+            <ul class="social">
+                <li><a href=""></a>instagram</li>
+                <li><a href=""></a>another link</li>
+                <li><a href=""></a>last link</li>
             </ul>
         </div>
-    </div>
-</div>
-
-<!--COURSE DESCRIPTION ON ONE PAGE-->
-
-<!--BOOKING FORM PAGE-->
-
-<!--BOOKING FORM CONFIRMATION-->
-
-<!--ADITIONAL PAGE USEFULL INFO-->
-
-<!--The booking form must validate user input and give feedback in case of invalid entry values.
-    (mobile first)-->
+    </footer>
 
 
     <script src='main.js'></script>
 </body>
 </html>
+
+
+
+
