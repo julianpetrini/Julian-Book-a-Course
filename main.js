@@ -83,7 +83,8 @@ function newPage (){
 
   if(lenguage=="english") 
   {
-      document.getElementById("result").innerHTML = firstname+" "+lastname+" Thanks for choosing our ENGLISH course, we will send the details to confirm at "+email
+      //document.getElementById("result").innerHTML = firstname+" "+lastname+" Thanks for choosing our ENGLISH course, we will send the details to confirm at <br>"+email
+      document.getElementById("result").innerHTML = firstname+" "+lastname+" Thanks for choosing our ENGLISH course, we will send the details to confirm at <br>"+email
       document.getElementById("textarea").innerHTML ="Here is the copy of your comments: "+text
   }
 
