@@ -493,7 +493,10 @@ h1,h2,h3,h4{
     }
    
     
-
+/* customized css for result text */
+h3 {
+  overflow-wrap: break-word;
+}
 
 
 
