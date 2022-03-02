@@ -58,27 +58,28 @@
       <section id="contact" class="contact-form">
         <h3>get in touch, and apply with our course</h3>
         <p>you will remember this day as the one who changed your destiny</p>
-        <form action="">
-            <input type="text" placeholder="NAME" name="" id="">
-            <input type="text" placeholder="LAST-NAME" name="" id="">
-            <input type="email" placeholder="email adress bitte" name="" id=""><br>
 
-            <div class="form-flex">
+        <form action="" onsubmit="validation().return,false" >
+            <input type="text" placeholder="NAME" name="fname" id="fname">
+            <input type="text" placeholder="LAST-NAME" name="lname" id="lname">
+            <input type="email" placeholder="email adress bitte" name="email" id="email"><br>
 
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">English</label><br>
+            <div class="form-flex" >
+    
+                    <input type="radio"  name="fav_language"  id="lenguage">
+                    <label for="english">English</label><br>
 
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">Deutch</label><br>
+                    <input type="radio"  name="fav_language"  id="deutsch">
+                    <label for="deutch">Deutch</label><br>
 
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">Spanish</label><br>
-
+                    <input type="radio"  name="fav_language" id="spanish">
+                    <label for="spanish">Spanish</label><br>
+                 
             </div>
 
-            <textarea name="message" style="width:300px; height:200px;" placeholder="Please told us if you need further information"></textarea><br>
+            <textarea name="message" style="width:300px; height:200px;" placeholder="Please told us if you need further information" id="text"></textarea><br>
 
-            <button class="button">Confirm</button>
+            <button class="button" type="submit" value="Submit">Confirm</button>
 
 
         </form>

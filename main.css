@@ -64,7 +64,7 @@ input,textarea{
     color:var(--secondary);
 }
 
-label{
+label, option{
     color: white;
     font-weight: bold;
 }
