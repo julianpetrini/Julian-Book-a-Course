@@ -16,10 +16,11 @@
 </head>
 <body>
 
-    <video class="h-100" style="width: 100%" playsinline autoplay muted loop>
-        <source src="assets/header1.mp4" type="video/mp4" />
-    </video>
-
+    <a href="index.html">
+        <video class="h-100" style="width: 100%" playsinline autoplay muted loop>
+            <source src="assets/header1.mp4" type="video/mp4" />
+        </video>
+    </a>
 
     
 
@@ -59,20 +60,20 @@
         <h3>get in touch, and apply with our course</h3>
         <p>you will remember this day as the one who changed your destiny</p>
 
-        <form action="" onsubmit="validation().return,false" >
+        <form action="" onsubmit="validation()" >
             <input type="text" placeholder="NAME" name="fname" id="fname">
             <input type="text" placeholder="LAST-NAME" name="lname" id="lname">
             <input type="email" placeholder="email adress bitte" name="email" id="email"><br>
 
             <div class="form-flex" >
     
-                    <input type="radio"  name="fav_language"  id="lenguage">
+                    <input type="radio"  name="lenguage" value="english" id="english">
                     <label for="english">English</label><br>
 
-                    <input type="radio"  name="fav_language"  id="deutsch">
+                    <input type="radio"  name="lenguage" value="deutch" id="deutsch">
                     <label for="deutch">Deutch</label><br>
 
-                    <input type="radio"  name="fav_language" id="spanish">
+                    <input type="radio"  name="lenguage" value="spanish"id="spanish" >
                     <label for="spanish">Spanish</label><br>
                  
             </div>
