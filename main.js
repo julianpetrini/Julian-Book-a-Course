@@ -32,11 +32,9 @@ function validation() {
 
 }
 
-
-//FUNCTION FOR
 function onSubmitted () {
 
- /* let checkedLanguage;
+  let checkedLanguage;
 
   if(document.getElementById("english").checked === true)
   
@@ -48,30 +46,24 @@ function onSubmitted () {
 
   else if(document.getElementById("spanish").checked === true)
   
-  {checkedLanguage = "spanish"}*/
+  {checkedLanguage = "spanish"}
 
   sessionStorage.setItem("firstName", document.getElementById("fname").value);
   sessionStorage.setItem("lastName", document.getElementById("lname").value);
   sessionStorage.setItem("email",document.getElementById("email").value);
-  sessionStorage.setItem("lenguage", document.getElementById("lenguage").value);
+  sessionStorage.setItem("lenguage",checkedLanguage);
   sessionStorage.setItem("text",document.getElementById("text").value);
 
   
 
   alert("Now you will be redirected");
-
+  window.close('form.html');
   window.open('confirmation.html');
 
-  window.close('form.html');
+  
   
   
 }
-
-
-
-
-
-
 
 function newPage (){
     
@@ -80,29 +72,35 @@ function newPage (){
   var lastname = sessionStorage.getItem("lastName");
   var email=sessionStorage.getItem("email");
   var lenguage=sessionStorage.getItem("lenguage");
+  var text=sessionStorage.getItem("text");
   
 
-alert("lenguage is"+lenguage);
-alert("lastname is"+lastname);
-alert("firstname is"+firstname);
-alert("email is"+email);
+//alert("lenguage is"+lenguage); THIS WAS A FORM OF CHECKING THAT RUNS
+//alert("lastname is"+lastname);
+//alert("firstname is"+firstname);
+//alert("email is"+email);
+//alert("text is "+text);
 
-  if(lenguage==[0]) 
+  if(lenguage=="english") 
   {
       document.getElementById("result").innerHTML = firstname+" "+lastname+" Thanks for choosing our ENGLISH course, we will send the details to confirm at "+email
+      document.getElementById("textarea").innerHTML ="Here is the copy of your comments: "+text
   }
 
-  else if (lenguage==[1])
+  else if (lenguage=="deutsch")
   {
-      document.getElementById("result").innerHTML = firstname+" "+lastname+"Vielen Dank, dass Sie sich für unseren Deutschkurs entschieden haben. Wir senden Ihnen die Details zur Bestätigung an "+email
+      document.getElementById("result").innerHTML = firstname+" "+lastname+" Vielen Dank, dass Sie sich für unseren Deutschkurs entschieden haben. Wir senden Ihnen die Details zur Bestätigung an "+email
+      document.getElementById("textarea").innerHTML ="Hier ist die Kopie Ihrer Kommentare: "+text
   }
 
-  else if(lenguage==[2]) 
+  else if(lenguage=="spanish") 
   {
-      document.getElementById("result").innerHTML = firstname+" "+lastname+" Muchas gracias por elegir el curso, le enviaremos los detalles de confirmacion a su email en "+email
+      document.getElementById("result").innerHTML = firstname+" "+lastname+" Muchas gracias por elegir el curso, le enviaremos los detalles de confirmación a su email en "+email
+      document.getElementById("textarea").innerHTML ="Aqui dejamos una copia de sus comentarios: "+text
   } else {
 
-  document.getElementById("result").innerHTML ="Your first name is"+lastname
+  document.getElementById("result").innerHTML ="Please contact customer service or call +41 076 265 5785 "
   }
 
 }
+
