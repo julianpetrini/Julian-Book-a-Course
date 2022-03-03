@@ -11,7 +11,12 @@ function myFunction() {
   }
 }
 
-function validation() {
+
+//FUNCTION VALIDATION 
+
+
+  
+  function validation() {
 
   var firstName=document.getElementById("fname").value
   var lastName=document.getElementById("lname").value
@@ -19,7 +24,10 @@ function validation() {
   
   
   if ( firstName=="" || lastName ==""|| email=="" )
-      {alert("Please enter all the required info, if not we can not continue")}
+      {alert("Please enter all the required info, if not we can not continue");
+      
+    return false
+    }
 
   else 
 
@@ -30,7 +38,7 @@ function validation() {
       
   }
 
-}
+};
 
 function onSubmitted () {
 
@@ -57,8 +65,8 @@ function onSubmitted () {
   
 
   alert("Now you will be redirected");
-  window.close('form.html');
-  window.open('confirmation.html');
+  //window.close('form.html');
+  //window.open('confirmation.html');
 
   
   
