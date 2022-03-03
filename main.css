@@ -103,6 +103,10 @@ h1,h2,h3,h4{
 
 /*mobile styles*/
 
+h3 {
+  overflow-wrap: break-word;
+}
+
 
 .grid{
     display: grid;
@@ -298,6 +302,9 @@ h1,h2,h3,h4{
       footer{
         background-size: 20%;
       }
+      h3 {
+        overflow-wrap:normal
+      }
     
     }
     
@@ -442,6 +449,9 @@ h1,h2,h3,h4{
         background-size: 20%;
         padding: 40px 20px;
       }
+      h3 {
+        overflow-wrap:normal
+      }
     
     }
 
@@ -489,14 +499,15 @@ h1,h2,h3,h4{
       footer img{
         width: 30px;
       }
+      h3 {
+        overflow-wrap:normal
+      }
     
     }
    
     
 /* customized css for result text */
-h3 {
-  overflow-wrap: break-word;
-}
+
 
 
 
